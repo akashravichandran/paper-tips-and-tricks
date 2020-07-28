@@ -205,7 +205,7 @@ Similarly, if you have a matrix `\vX`, can call its *i*th column `\vx_i` (it is 
 Use `\(...\)` to write inline equations.
 You can also use `$...$`, but it is a TeX command and gives more obscure error messages.
 
-To write centered equations on their own lines, do not `$$...$$` (it is one of the [deadly sins of LaTeX use](http://www.pirbot.com/mirrors/ctan/info/l2tabu/english/l2tabuen.pdf)).
+To write centered equations on their own lines, do not `$$...$$` (it is one of the [deadly sins of LaTeX use](http://ctan.math.utah.edu/ctan/tex-archive/info/l2tabu/english/l2tabuen.pdf)).
 It works, but gives wrong spacing.
 Use `\begin{equation*}` or `\begin{align*}` instead.
 
@@ -238,10 +238,10 @@ You can customize the way the back references appear with the following commands
 
 # Creating figures
 
-Figures are a very important part of a majority of papers: they are your way of communicating your results.
-You should always think about what you are trying to say with each figure, and make sure that there is just enough information to support your message, not more.
-For example, if you want to show patterns in 2d points (there are two clusters well separated), maybe it is not necessary to put ticks and values on the axes (the scale does not really matter)?
-Figures should also not be too complex: it is better to have several figures conveying each one or two messages (method A is better than B, but converges slower) than one big messy figure.
+Figures are an important component to any paper, as they can communicate your results to the reader.
+You should consider what the information on each figure tells your reader, and that there is just enough information to support your message, not more.
+For example, if you want to show patterns in 2d points (there are two clusters well separated), it is unnecessary to put ticks and values on the axes (the scale does not really matter)?
+Figures should not be too complex. It is better to have several figures conveying one or two messages, (method A is better than B, but converges slower) than having one big messy figure.
 
 ## One script per data-driven figure
 
@@ -344,11 +344,11 @@ The solution is to rasterize parts of your figure, i.e., to tell `matplotlib` th
 
 You can pass the `rasterized=True` keyword to most plotting fuctions in `matplotlib`.
 You can also use different layers using the `zorder` and tell `matplotlib` to rasterize all the layers below a given `zorder` using the `set_rasterization_zorder()` method of the axis.
-See [figure_rasterized_example.py](https://github.com/Wookai/paper-tips-and-tricks/blob/master/src/pyton/figure_rasterized_example.py) and http://matplotlib.org/examples/misc/rasterization_demo.html for examples of rasterization.
+See [figure_rasterized_example.py](https://github.com/Wookai/paper-tips-and-tricks/blob/master/src/python/figure_rasterized_example.py) and http://matplotlib.org/examples/misc/rasterization_demo.html for examples of rasterization.
 
 # Useful resources
 
 * Automatically capitalize your title: http://titlecapitalization.com
 * Chicago Manual of Style: http://www.chicagomanualofstyle.org
 * Command-line check of weasel words, passive, etc: https://github.com/devd/Academic-Writing-Check
-* An essential guide to LaTeX 2e usage: http://www.pirbot.com/mirrors/ctan/info/l2tabu/english/l2tabuen.pdf
+* An essential guide to LaTeX 2e usage: http://ctan.math.utah.edu/ctan/tex-archive/info/l2tabu/english/l2tabuen.pdf
